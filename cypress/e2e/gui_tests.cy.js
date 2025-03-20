@@ -99,7 +99,7 @@ it('Adicionando mais de um Produto, Confirmando Produtos na listagem do Carrinho
     .should('have.length', 3);  // Verifica se o número de itens é o total de itens selecionados
 });
 
-it.only('Confirmando Checkout e Valor Total dos Itens Sem a Taxa', () => {
+it('Confirmando Checkout e Valor Total dos Itens Sem a Taxa', () => {
   cy.loginSite();
 
   // Definir uma variável para armazenar o total
